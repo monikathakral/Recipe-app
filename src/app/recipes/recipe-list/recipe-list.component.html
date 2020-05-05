@@ -1,0 +1,23 @@
+<div class="row pt-3">
+    <div class="col-xl-12">
+        <h3>Add New Recipe </h3>
+        <button class="btn btn-success">New Recipe</button>
+    </div>
+    <div class="row mt-3">
+        <div class="col-xl-12">
+            <div *ngFor="let recipe of recipes" class="list-group clearfix">
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="float-left pr-5">
+                        <h3>{{recipe.name}}</h3>
+                        <small>{{recipe.desc}}</small>
+                    </div>
+                    <span class="float-right">
+                        <img class="imgSize" src={{recipe.imagePath}}
+                        alt="{{recipe.name}}">
+                    </span>
+                </a>
+            </div>
+            <app-recipe-item></app-recipe-item>
+        </div>
+    </div>
+</div>

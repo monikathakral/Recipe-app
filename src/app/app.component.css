@@ -1,0 +1,11 @@
+.animate_div {
+    background-color: red;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: white;}
+  }
